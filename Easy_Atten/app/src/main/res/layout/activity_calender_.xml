@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    tools:context=".calender_Activity">
+
+    <DigitalClock
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif-light"
+        android:textAlignment="center"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_cal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="28dp"
+        android:text="Date"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button_cal"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buttons"
+        android:text="open date picker"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
+

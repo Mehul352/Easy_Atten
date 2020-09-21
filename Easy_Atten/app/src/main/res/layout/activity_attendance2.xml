@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/stdinfo_bg"
+    tools:context=".Attendance2">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/submit_attendance"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="submit"
+            android:text="Submit Attendance"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/delete_attendance"
+            android:layout_width="58dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_delete"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="cancel"
+            android:text="Delete Attendance"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginBottom="3dp"-->
+<!--            android:background="@drawable/buttons"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:onClick="submit"-->
+<!--            android:text="Submit  Attendance"-->
+<!--            android:textColor="#FFFFFF" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button4_cancel"-->
+<!--            android:layout_width="172dp"-->
+<!--            android:layout_height="53dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:background="@drawable/deletebutton"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            android:onClick="cancel"-->
+<!--            android:text="Delete Attendance"-->
+<!--            android:textColor="#FFFFFF" />-->
+
+
+    <!--        <Button-->
+        <!--        android:id="@+id/selectAll_btn"-->
+        <!--        android:layout_width="122dp"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:background="@drawable/buttons"-->
+        <!--        android:onClick="selectallcheckbox"-->
+        <!--        android:text="@android:string/selectAll"-->
+        <!--        android:textColor="#FFFFFF" />-->
+
+
+        <!--                <Button-->
+        <!--            android:id="@+id/save_dragandrop"-->
+        <!--            android:layout_width="122dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:background="@drawable/buttons"-->
+        <!--            android:text="Save"-->
+        <!--            android:textColor="#FFFFFF" />-->
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".student_btn_clicked">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="Loading...please wait..."
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:visibility="gone" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="75dp">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="Welcome Student!"
+                    android:textColor="#1258C9"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/ivStudent"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                app:srcCompat="@drawable/student" />
+
+            <EditText
+                android:id="@+id/etEmailStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etPasswordStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <!--        <CheckBox-->
+            <!--            android:id="@+id/checkBox_rem_stu"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginLeft="20dp"-->
+            <!--            android:layout_marginRight="20dp"-->
+            <!--            android:text="Remember me" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnLoginStudent"
+                    android:layout_width="338dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttons"
+                    android:onClick="StudentLoginClick"
+                    android:text="Login"
+                    android:textColor="#ffffff" />
+
+                <!--            <Button-->
+                <!--                android:id="@+id/btnSignupStudent"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginLeft="20dp"-->
+                <!--                android:layout_marginTop="10dp"-->
+                <!--                android:layout_marginRight="20dp"-->
+                <!--                android:layout_weight="1"-->
+                <!--                android:background="@drawable/buttons"-->
+                <!--                android:text="Signup"-->
+                <!--                android:textColor="#ffffff" />-->
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvReset_Student"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:text="Forgot Password? Reset here"
+                android:textColor="@color/colorPrimaryDark" />
+
+<!--            <Button-->
+<!--                android:id="@+id/std_about"-->
+<!--                android:layout_width="177dp"-->
+<!--                android:layout_height="58dp"-->
+<!--                android:layout_marginTop="129dp"-->
+<!--                android:layout_marginRight="118dp"-->
+<!--                android:background="@drawable/stdaboutbuttom"-->
+<!--                android:text="About Us"-->
+<!--                android:textColor="#FFFFFF" />-->
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
+
+

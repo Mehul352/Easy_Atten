@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".AddStudentActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_vertical"
+                    android:text="User Id"
+                    android:textColor="#2979FF"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_vertical"
+                    android:text="Name"
+                    android:textColor="#2979FF"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_border"
+
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_vertical"
+                    android:text="Roll No."
+                    android:textColor="#2979FF"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/editText7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_vertical"
+                    android:text="Dept."
+                    android:textColor="#2979FF"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/editText8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_vertical"
+                    android:text="Phone"
+                    android:textColor="#2979FF"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/editText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_vertical"
+                    android:text="Email"
+                    android:textColor="#2979FF"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/editText10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="center"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_vertical"
+                    android:text="Password"
+                    android:textColor="#2979FF"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/editText11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="161dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="center_vertical"
+                    android:text="Subjects"
+                    android:textColor="#2979FF"
+                    android:textSize="25dp" />
+
+                <ScrollView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+                        <CheckBox
+                            android:id="@+id/checkBox1"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT01- C"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT02- C++"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+                        <CheckBox
+                            android:id="@+id/checkBox3"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT03- HTML"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox4"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT04- CSS"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox5"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT05- Maths1"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT06- DBMS"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox7"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT07- RDBMS"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox8"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT08- JAVA"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox9"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT09- EJAVA"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox10"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT010-Maths2"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox11"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT011- C#"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox12"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT012- Python"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+
+                        <CheckBox
+                            android:id="@+id/checkBox13"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT013- N/W"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox14"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT014- DeepL"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox15"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT015- ML"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox16"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT016- AI"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox17"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT017-DS"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox18"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT018-Kotlin"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox19"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT019-Android"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox20"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT020- Flutter"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox21"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT021- BI"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox22"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT022- 8085"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox23"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT023- 8061"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox24"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT024- CL"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox25"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT025- GeoInfo"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox26"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT026- NS"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox27"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT027- CCNA"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox28"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT028-Python2"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox29"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT029-DataSc."
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox30"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="IT030- JS"
+                            android:textColor="#2979FF"
+                            android:textSize="25dp" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="238dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/buttons"
+                android:gravity="center"
+                android:onClick="fnRegister"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
