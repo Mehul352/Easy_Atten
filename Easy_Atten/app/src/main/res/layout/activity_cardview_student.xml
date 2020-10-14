@@ -34,11 +34,13 @@
                 android:text="2 Items"
                 android:textColor="#52BAFF"
                 android:textSize="14sp" />
+
             <ImageView
-                android:src="@drawable/student"
-                android:layout_alignParentRight="true"
+                android:id="@+id/student_pic"
                 android:layout_width="62dp"
-                android:layout_height="62dp"/>
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/student" />
 
         </RelativeLayout>
         <GridLayout

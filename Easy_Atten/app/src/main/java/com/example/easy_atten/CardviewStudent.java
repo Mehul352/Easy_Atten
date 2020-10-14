@@ -3,6 +3,7 @@ package com.example.easy_atten;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +15,7 @@ public class CardviewStudent extends AppCompatActivity {
         CardView viewStudent;
         CardView feedback_stu;
         CardView aboutus_stu;
+        ImageView student_profile;
 
 
     @Override
@@ -25,9 +27,14 @@ protected void onCreate(Bundle savedInstanceState) {
 //        viewStudent = findViewById(R.id.viewStu_student);
         feedback_stu = findViewById(R.id.feed_student);
         aboutus_stu = findViewById(R.id.aboutUs_student);
+        student_profile = findViewById(R.id.student_pic);
 
-
-
+        student_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(CardviewStudent.this, "Student Profile", Toast.LENGTH_SHORT).show();
+            }
+        });
         feedback_stu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
