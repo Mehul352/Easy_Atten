@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -23,6 +24,7 @@ public class CardviewUI_Mentor extends AppCompatActivity {
     CardView feedback;
     CardView about_us;
     CardView calender;
+    ImageView mentor_admin_profile;
     int TAKE_IMAGE_CODE = 10001;
 
 
@@ -37,6 +39,7 @@ public class CardviewUI_Mentor extends AppCompatActivity {
         feedback =findViewById(R.id.feed);
         about_us = findViewById(R.id.aboutUs);
         calender = findViewById(R.id.calender_mentor);
+        mentor_admin_profile = findViewById(R.id.mentor_pic);
 
 
 
@@ -62,6 +65,12 @@ public class CardviewUI_Mentor extends AppCompatActivity {
             }
         });
         //***********
+        mentor_admin_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(CardviewUI_Mentor.this, "Mentor Profile", Toast.LENGTH_SHORT).show();
+            }
+        });
         attendance_Mentor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
